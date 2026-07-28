@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Luxury Wedding Photography & Cinematic Films by Picture Palace Productions. Memories Treasured Since 1950.">
+    <meta name="keywords" content="Wedding Photography, Cinematic Films, Picture Palace Productions, Moradabad">
+    <meta name="author" content="Picture Palace Productions">
+
+    <title>Picture Palace Productions | Luxury Wedding Photography</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- AOS CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    
+
+</head>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+
+AOS.init({
+
+    duration:1000,
+
+    once:true,
+
+    offset:100,
+
+    easing:"ease-in-out"
+
+});
+
+</script>
+<div id="lightbox">
+
+<span id="close-lightbox">&times;</span>
+
+<img id="lightbox-img">
+
+</div>
+<div id="booking-popup">
+
+    <div class="booking-box">
+
+        <span id="close-booking">&times;</span>
+
+        <h2>Book Your Wedding</h2>
+
+        <p>Tell us about your special day</p>
+
+        <form>
+
+            <input type="text" placeholder="Bride Name" required>
+            <input type="text" placeholder="Groom Name" required>
+            <input type="date" required>
+            <input type="tel" placeholder="Mobile Number" required>
+
+            <button type="submit">Send Enquiry</button>
+
+        </form>
+
+    </div>
+
+</div>
+<body>
+
+    <!-- Navbar -->
+    <header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <img src="assets/logo/logo.png" alt="Picture Palace Productions">
+
+        </a>
+
+        <ul class="nav-menu">
+
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li><a href="portfolio.html">Portfolio</a></li>
+
+            <li><a href="films.html">Films</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+        <div class="menu-btn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </nav>
+    <!-- Mobile Menu Button -->
+
+<div class="menu-toggle">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+</header>
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero">
+
+    <div class="hero-slider">
+
+        <img src="assets/images/hero/hero1.jpg" class="active">
+
+        <img src="assets/images/hero/hero2.jpg">
+
+        <img src="assets/images/hero/hero3.jpg">
+
+        <img src="assets/images/hero/hero4.jpg">
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content container">
+
+        <h4>Luxury Wedding Photography</h4>
+
+        <h1>
+            Capturing Timeless<br>
+            Love Stories
+        </h1>
+
+        <p>
+
+    Premium Wedding Photography • Cinematic Films •
+    <br>
+    <span class="since">Memories Treasured Since 1950</span>
+
+</p>
+
+    <div class="hero-buttons">
+
+    <a href="portfolio.html" class="btn btn-gold">
+        View Portfolio
+    </a>
+
+    <a href="contact.html#booking" class="btn btn-outline">
+    Book Now
+</a>
+
+</div>
+</button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <section id="portfolio-preview"></section>
+
+        <section id="services-preview"></section>
+
+        <section id="films-preview"></section>
+
+        <section id="testimonials"></section>
+
+        <section id="instagram"></section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "R-zcl_NyW2OKOkuOk",
+});
+</script>
+    <script src="js/navbar.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/script.js"></script>
+
+
+   
+<!-- ===========================
+BOOKING POPUP
+=========================== -->
+
+<div id="booking-popup">
+
+    <div class="booking-box">
+
+        <span id="close-booking">&times;</span>
+
+        <h2>Book Your Wedding</h2>
+
+        <p>Tell us about your special day</p>
+
+        <form id="bookingForm">
+
+            <input type="text" id="bride" placeholder="Bride Name" required>
+
+            <input type="text" id="groom" placeholder="Groom Name" required>
+
+            <input type="date" id="date" required>
+
+            <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+            <input type="text" id="city" placeholder="City">
+
+            <input type="text" id="venue" placeholder="Venue">
+
+<select id="service" required>
+
+    <option value="">Select Service</option>
+    <option>Wedding Photography</option>
+    <option>Cinematic Films</option>
+    <option>Pre Wedding</option>
+    <option>Drone Coverage</option>
+    <option>Luxury Album</option>
+
+</select>
+
+            <textarea id="message" placeholder="Tell us about your event"></textarea>
+
+            <button type="submit">Send Enquiry</button>
+
+        </form>
+
+    </div>
+
+</div>
+<div id="progress-bar"></div>
+</body>
+
+
+</html>
+<!--================ PAGE LOADER ================-->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <img src="assets/logo/logo.png" alt="Picture Palace Productions">
+
+        <h2>Picture Palace Productions</h2>
+
+        <span>Memories Treasured Since 1950</span>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FEATURED WEDDINGS ================= -->
+
+<section class="stories">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>FEATURED WEDDINGS</span>
+
+            <h2>Every Wedding Has A Beautiful Story</h2>
+
+            <p>
+                A curated collection of our most memorable weddings.
+            </p>
+
+        </div>
+
+        <div class="stories-grid">
+
+            <!-- Left Large Card -->
+
+            <a href="portfolio.html" class="story-large">
+
+                <img src="assets/images/stories/story1.jpg" alt="Wedding Story">
+
+                <div class="story-overlay">
+
+                    <span>Featured Wedding</span>
+
+                    <h3>Prakhar & Yashi</h3>
+
+                    <p>View Story →</p>
+
+                </div>
+
+            </a>
+
+            <!-- Right Side -->
+
+            <div class="story-right">
+
+                <a href="portfolio.html" class="story-small">
+
+                    <img src="assets/images/stories/story2.jpg">
+
+                    <div class="story-overlay">
+
+                        <h3>Mohsin & Zeba</h3>
+
+                    </div>
+
+                </a>
+
+                <a href="portfolio.html" class="story-small">
+
+                    <img src="assets/images/stories/story3.jpg">
+
+                    <div class="story-overlay">
+
+                        <h3>Faraz & Isbah</h3>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FEATURED STORIES ================= -->
+
+<section class="featured">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>FEATURED STORIES</span>
+
+            <h2>Every Love Story Deserves Timeless Memories</h2>
+
+            <p>
+                A glimpse of our finest weddings captured with elegance,
+                emotions and cinematic storytelling.
+            </p>
+
+        </div>
+
+        <div class="featured-grid">
+
+            <div class="featured-card">
+
+                <img src="assets/images/portfolio/portfolio1.jpg">
+
+            </div>
+
+            <div class="featured-card">
+
+                <img src="assets/images/portfolio/portfolio2.jpg">
+
+            </div>
+
+            <div class="featured-card">
+
+                <img src="assets/images/portfolio/portfolio3.jpg">
+
+            </div>
+
+        </div>
+
+        <div class="featured-btn">
+
+            <a href="portfolio.html">
+
+                Explore Portfolio
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ CINEMATIC FILMS ================-->
+
+<section class="films-home">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>CINEMATIC FILMS</span>
+
+            <h2>Relive Every Emotion</h2>
+
+            <p>
+                Beautifully crafted cinematic wedding films that preserve every smile,
+                every tear and every unforgettable moment.
+            </p>
+
+        </div>
+
+        <div class="films-grid">
+
+            <!-- Wedding -->
+            <div class="film-card"
+                 data-video="https://www.youtube.com/embed/tAHuMsSAcUA?autoplay=1">
+
+                <img src="assets/images/films/film1.jpg" alt="Wedding Teaser">
+
+                <div class="film-overlay">
+
+                    <i class="fa-solid fa-play"></i>
+
+                    <h3>Wedding Teaser</h3>
+
+                </div>
+
+            </div>
+
+            <!-- Haldi -->
+            <div class="film-card"
+                 data-video="https://www.youtube.com/embed/X9psES9_ToI?autoplay=1">
+
+                <img src="assets/images/films/film2.jpg" alt="Haldi Highlights">
+
+                <div class="film-overlay">
+
+                    <i class="fa-solid fa-play"></i>
+
+                    <h3>Pre Wedding</h3>
+
+                </div>
+
+            </div>
+
+            <!-- Reception -->
+            <div class="film-card"
+                 data-video="https://www.youtube.com/embed/KgPj4ACizG0?autoplay=1">
+
+                <img src="assets/images/films/film3.jpg" alt="Reception Film">
+
+                <div class="film-overlay">
+
+                    <i class="fa-solid fa-play"></i>
+
+                    <h3>Engagement Teaser</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="featured-btn">
+
+            <a href="films.html">View All Films</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!--================ SIGNATURE SERVICES ================-->
+
+<section class="services-home">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>OUR SERVICES</span>
+
+            <h2>Everything You Need For Your Dream Wedding</h2>
+
+            <p>
+
+                From photography to cinematic films, drone coverage,
+                premium albums and live streaming.
+
+            </p>
+
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-box">
+
+                <img src="assets/images/services/service1.jpg">
+
+                <div class="service-overlay">
+
+                    <h3>Wedding Photography</h3>
+
+                </div>
+
+            </div>
+
+            <div class="service-box">
+
+                <img src="assets/images/services/service2.jpg">
+
+                <div class="service-overlay">
+
+                    <h3>Pre Wedding</h3>
+
+                </div>
+
+            </div>
+
+            <div class="service-box">
+
+                <img src="assets/images/services/service3.jpg">
+
+                <div class="service-overlay">
+
+                    <h3>Cinematic Films</h3>
+
+                </div>
+
+            </div>
+
+            <div class="service-box">
+
+                <img src="assets/images/services/service4.jpg">
+
+                <div class="service-overlay">
+
+                    <h3>Drone Coverage</h3>
+
+                </div>
+
+            </div>
+
+            <div class="service-box">
+
+                <img src="assets/images/services/service5.jpg">
+
+                <div class="service-overlay">
+
+                    <h3>Luxury Albums</h3>
+
+                </div>
+
+            </div>
+
+            <div class="service-box">
+
+                <img src="assets/images/services/service6.jpg">
+
+                <div class="service-overlay">
+
+                    <h3>Live Streaming</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ OUR LEGACY ================-->
+
+<section class="legacy">
+
+    <div class="container">
+
+        <div class="legacy-left">
+
+            <span>SINCE 1950</span>
+
+            <h2>
+                75 Years Of Trust,<br>
+                Passion & Timeless Memories
+            </h2>
+
+            <p>
+
+                Picture Palace Productions has been preserving beautiful
+                moments for generations. From timeless wedding photography
+                to modern cinematic storytelling, our legacy continues.
+
+            </p>
+
+            <a href="about.html" class="btn btn-gold">
+
+                Read Our Story
+
+            </a>
+
+        </div>
+
+        <div class="legacy-right">
+
+            <div class="counter">
+
+                <h2>75+</h2>
+
+                <p>Years Experience</p>
+
+            </div>
+
+            <div class="counter">
+
+                <h2>5000+</h2>
+
+                <p>Luxury Weddings</p>
+
+            </div>
+
+            <div class="counter">
+
+                <h2>10L+</h2>
+
+                <p>Captured Memories</p>
+
+            </div>
+
+            <div class="counter">
+
+                <h2>100%</h2>
+
+                <p>Client Satisfaction</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ WHY CHOOSE US ================-->
+
+<section class="why-us">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>WHY CHOOSE US</span>
+
+            <h2>Since 1950 We Don't Capture Photos,<br>We Capture Emotions.</h2>
+
+            <p>
+                For more than seven decades, Picture Palace Productions has
+                been creating timeless memories with artistic photography and
+                cinematic wedding films.
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+
+                <div class="why-number">5000+</div>
+
+                <h3>Luxury Weddings</h3>
+
+                <p>
+                    Beautiful weddings photographed with creativity and emotion.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-number">75+</div>
+
+                <h3>Years of Trust</h3>
+
+                <p>
+                    A legacy of excellence trusted by generations of families.
+                </p>
+
+            </div>
+
+            <div class="why-card">
+
+                <div class="why-number">4K</div>
+
+                <h3>Cinematic Films</h3>
+
+                <p>
+                    Premium storytelling with modern cinematic filmmaking.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ TESTIMONIALS ================-->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>CLIENT LOVE</span>
+
+            <h2>Words That Inspire Us</h2>
+
+            <p>
+                Every wedding is unique, and every smile we capture becomes a memory for life.
+            </p>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Picture Palace Productions made our wedding absolutely magical.
+                    Every photograph feels alive. Highly recommended!"
+                </p>
+
+                <div class="client">
+
+                    <img src="assets/images/testimonials/client1.jpg" alt="Client">
+
+                    <div>
+
+                        <h4>Mohsin & Zeba</h4>
+
+                        <span>Wedding Couple</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Professional team, amazing cinematic films and beautiful albums.
+                    We couldn't have asked for more."
+                </p>
+
+                <div class="client">
+
+                    <img src="assets/images/testimonials/client2.jpg" alt="Client">
+
+                    <div>
+
+                        <h4>Prashant & Deeksha</h4>
+
+                        <span>Wedding Couple</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    "Our family loved every picture. Thank you for making our special
+                    day unforgettable."
+                </p>
+
+                <div class="client">
+
+                    <img src="assets/images/testimonials/client3.jpg" alt="Client">
+
+                    <div>
+
+                        <h4>Asad & Simna</h4>
+
+                        <span>Wedding Couple</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ INSTAGRAM GALLERY ================-->
+
+<section class="instagram-feed">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>FOLLOW OUR JOURNEY</span>
+
+            <h2>@PicturePalaceProductions</h2>
+
+            <p>
+                Behind every beautiful wedding is a story waiting to be told.
+            </p>
+
+        </div>
+
+        <div class="instagram-grid">
+
+            <a href="#" class="insta-item">
+                <img src="assets/images/instagram/insta1.jpg" alt="">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+
+            <a href="#" class="insta-item">
+                <img src="assets/images/instagram/insta2.jpg" alt="">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+
+            <a href="#" class="insta-item">
+                <img src="assets/images/instagram/insta3.jpg" alt="">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+
+            <a href="#" class="insta-item">
+                <img src="assets/images/instagram/insta4.jpg" alt="">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+
+            <a href="#" class="insta-item">
+                <img src="assets/images/instagram/insta5.jpg" alt="">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+
+            <a href="#" class="insta-item">
+                <img src="assets/images/instagram/insta6.jpg" alt="">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ CTA ================-->
+
+
+<!--================ FOOTER ================-->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <!-- Logo & About -->
+        <div class="footer-about">
+
+            <img src="assets/logo/logo.png" alt="Picture Palace Productions">
+
+            <p>
+                Since 1950, Picture Palace Productions has been capturing timeless
+                memories through luxury wedding photography and cinematic films.
+            </p>
+
+            <div class="social-links">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/picturepalaceproductions/"
+       target="_blank"
+       aria-label="Facebook">
+
+        <i class="fab fa-facebook-f"></i>
+
+    </a>
+
+    <!-- Instagram -->
+
+    <a href="https://www.instagram.com/picturepalaceproductions/?hl=en"
+       target="_blank"
+       aria-label="Instagram">
+
+        <i class="fab fa-instagram"></i>
+
+    </a>
+
+    <!-- YouTube -->
+
+    <a href="https://www.youtube.com/@picturepalaceproductions"
+       target="_blank"
+       aria-label="YouTube">
+
+        <i class="fab fa-youtube"></i>
+
+    </a>
+
+    <!-- WhatsApp -->
+
+    <a href="https://wa.me/917983139083"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+
+                <li><a href="films.html">Films</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Services -->
+        <div>
+
+            <h3>Services</h3>
+
+            <ul>
+
+                <li>Wedding Photography</li>
+
+                <li>Pre Wedding Shoot</li>
+
+                <li>Cinematic Films</li>
+
+                <li>Drone Coverage</li>
+
+                <li>Luxury Albums</li>
+
+                <li>Live Streaming</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+        <div>
+
+    <h3>Contact</h3>
+
+    <ul class="contact-info">
+
+        <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+917983139083">+91 7983139083</a>
+        </li>
+
+        <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919219566744">+91 9219566744</a>
+        </li>
+
+        <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+918077645822">+91 8077645822</a>
+        </li>
+
+        <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919897224224">+91 9897224224</a>
+        </li>
+
+        <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:ypicturepalace@gmail.com">
+                ypicturepalace@gmail.com
+            </a>
+        </li>
+
+        <li>
+            <i class="fas fa-map-marker-alt"></i>
+            Moradabad, Uttar Pradesh, India
+        </li>
+
+    </ul>
+
+</div>
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Picture Palace Productions. All Rights Reserved.
+
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "R-zcl_NyW2OKOkuOk",
+});
+</script>
+<!--================ VIDEO POPUP ================-->
+
+<div id="videoPopup" class="video-popup">
+
+    <div class="popup-content">
+
+        <span id="closeVideo">&times;</span>
+
+        <iframe
+            id="youtubePlayer"
+            src=""
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+</div>
+
+<script src="js/navbar.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

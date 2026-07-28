@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Luxury Wedding Photography Portfolio - Picture Palace Productions">
+    <meta name="keywords" content="Wedding Portfolio, Pre Wedding, Cinematic Photography">
+    <meta name="author" content="Picture Palace Productions">
+
+    <title>Portfolio | Picture Palace Productions</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+</head>
+
+<body>
+
+    <!-- ===== Header Start ===== -->
+
+   
+<!--======================
+HEADER
+=======================-->
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<img src="assets/logo/logo.png" alt="Picture Palace Productions">
+
+</a>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="portfolio.html" class="active">Portfolio</a></li>
+
+<li><a href="films.html">Films</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="menu-btn">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+</nav>
+
+<div class="menu-toggle">
+
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+</header>
+
+<!--======================
+PORTFOLIO HERO
+=======================-->
+
+<section class="portfolio-hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h5>Picture Palace Productions</h5>
+
+<h1>OUR PORTFOLIO</h1>
+
+<p>
+
+Capturing Love Stories, Timeless Memories & Beautiful Moments That Last Forever.
+
+</p>
+
+</div>
+
+</section>
+
+<!--======================
+CATEGORY FILTER
+=======================-->
+
+<section class="portfolio-filter">
+
+<button class="filter-btn active" data-filter="all">
+
+All
+
+</button>
+
+<button class="filter-btn" data-filter="wedding">
+
+Wedding
+
+</button>
+
+<button class="filter-btn" data-filter="prewedding">
+
+Pre Wedding
+
+</button>
+
+<button class="filter-btn" data-filter="engagement">
+
+Engagement
+
+</button>
+
+<button class="filter-btn" data-filter="baby">
+
+Baby Shoot
+
+</button>
+
+<button class="filter-btn" data-filter="candid">
+
+Candid
+
+</button>
+
+</section>
+
+
+<!--=========================================
+        PORTFOLIO CATEGORIES
+==========================================-->
+
+<section class="portfolio-gallery">
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card"
+     data-folder="wedding"
+     data-category="wedding">
+            <img src="assets/images/portfolio/wedding/1.jpg" alt="">
+            <div class="gallery-content">
+                <h2>Wedding</h2>
+                <p>25 Photos</p>
+            </div>
+        </div>
+
+        <div class="gallery-card"
+     data-folder="prewedding"
+     data-category="prewedding">
+            <img src="assets/images/portfolio/prewedding/1.jpg" alt="">
+            <div class="gallery-content">
+                <h2>Pre Wedding</h2>
+                <p>25 Photos</p>
+            </div>
+        </div>
+
+        <div class="gallery-card"
+     data-folder="engagement"
+     data-category="engagement">
+            <img src="assets/images/portfolio/engagement/1.jpg" alt="">
+            <div class="gallery-content">
+                <h2>Engagement</h2>
+                <p>25 Photos</p>
+            </div>
+        </div>
+
+        <div class="gallery-card"
+     data-folder="baby"
+     data-category="baby">
+            <img src="assets/images/portfolio/baby/1.jpg" alt="">
+            <div class="gallery-content">
+                <h2>Baby Shoot</h2>
+                <p>25 Photos</p>
+            </div>
+        </div>
+
+        <div class="gallery-card"
+     data-folder="candid"
+     data-category="candid">
+            <img src="assets/images/portfolio/candid/1.jpg" alt="">
+            <div class="gallery-content">
+                <h2>Candid</h2>
+                <p>25 Photos</p>
+            </div>
+        </div>
+
+        <div class="gallery-card"
+     data-folder="events"
+     data-category="events">
+            <img src="assets/images/portfolio/events/1.jpg" alt="">
+            <div class="gallery-content">
+                <h2>Events</h2>
+                <p>25 Photos</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!--=========================================
+            FULL SCREEN GALLERY
+==========================================-->
+
+<div id="lightbox">
+
+    <span id="closeBtn">&times;</span>
+
+    <button id="prevBtn">&#10094;</button>
+
+    <img id="lightboxImage" src="" alt="">
+
+    <button id="nextBtn">&#10095;</button>
+
+    <!-- Gallery Title -->
+    <div id="galleryTitle"></div>
+
+    <!-- Thumbnail Strip -->
+    <div id="thumbnailContainer"></div>
+
+    <!-- Image Counter -->
+    <div id="counter"></div>
+
+</div>
+
+
+
+
+<!--=========================================
+        BOOK YOUR STORY
+==========================================-->
+
+<section class="portfolio-cta">
+
+    <div class="cta-content">
+
+        <h2>Let's Capture Your Beautiful Story</h2>
+
+        <p>
+            Every love story deserves timeless memories.
+            Book your wedding, pre-wedding or special event with
+            Picture Palace Productions.
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="contact.html#booking" class="cta-btn">
+                Book Now
+            </a>
+
+            <a href="tel:+917983139083" class="cta-btn-outline">
+                Call Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="featured-stories">
+
+<div class="container">
+
+<div class="featured-heading">
+
+<span>FEATURED STORIES</span>
+
+<h2>Luxury Wedding Stories</h2>
+
+<p>
+Every wedding tells a unique story.
+A glimpse into our finest cinematic celebrations.
+</p>
+
+</div>
+
+<div class="stories-layout">
+
+<!-- LEFT -->
+
+<div class="story-card left-story"
+     data-folder="wedding">
+
+<img class="story-slider"
+src="assets/images/featured/wedding/1.jpg">
+
+<div class="story-info">
+
+<h5>Wedding</h5>
+
+<h2>Sankalp & Sehaj</h2>
+
+<p>Moradabad</p>
+
+<button class="story-btn">
+View Story
+</button>
+
+</div>
+
+</div>
+
+<!-- CENTER -->
+
+<div class="story-card center-story"
+     data-folder="prewedding">
+
+<img class="story-slider"
+src="assets/images/featured/prewedding/1.jpg">
+
+<div class="story-info">
+
+<h5>Pre Wedding</h5>
+
+<h2>Sahil & Palak</h2>
+
+<p>Nainital</p>
+
+<button class="story-btn">
+View Story
+</button>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
+
+<div class="story-card right-story"
+     data-folder="engagement">
+
+<img class="story-slider"
+src="assets/images/featured/engagement/1.jpg">
+
+<div class="story-info">
+
+<h5>Engagement</h5>
+
+<h2>Ujjwal & Surbhi</h2>
+
+<p>New Delhi</p>
+
+<button class="story-btn">
+View Story
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================================================
+     PICTURE PALACE PREMIUM ALBUM SHOWCASE
+=========================================================== -->
+
+<section id="ppAlbumShowcase" class="pp-album-showcase">
+
+    <div class="container">
+
+        <div class="pp-album-heading">
+
+            <span class="pp-album-subtitle">
+                Picture Palace Productions
+            </span>
+
+            <h2 class="pp-album-title">
+                Premium Album Layout Collection
+            </h2>
+
+            <p class="pp-album-description">
+                Explore our premium wedding album designs in their original proportions.
+            </p>
+
+        </div>
+
+        <div class="ppAlbumGrid">
+
+            <!-- 12×36 -->
+
+            <article
+                class="ppAlbumCard ppRatio1236"
+                data-folder="12x36-landscape">
+
+                <img
+                    src="assets/albums/12x36-landscape/01.jpg"
+                    alt="12×36 Album">
+
+                <div class="ppAlbumOverlay">
+
+                    <h3>12×36 Landscape</h3>
+
+                </div>
+
+            </article>
+
+            <!-- 18×24 -->
+
+            <article
+                class="ppAlbumCard ppRatio1824"
+                data-folder="18x24-portrait">
+
+                <img
+                    src="assets/albums/18x24-portrait/01.jpg"
+                    alt="18×24 Album">
+
+                <div class="ppAlbumOverlay">
+
+                    <h3>18×24 Portrait</h3>
+
+                </div>
+
+            </article>
+
+            <!-- 14×40 -->
+
+            <article
+                class="ppAlbumCard ppRatio1440"
+                data-folder="14x40">
+
+                <img
+                    src="assets/albums/14x40/01.jpg"
+                    alt="14×40 Album">
+
+                <div class="ppAlbumOverlay">
+
+                    <h3>14×40 Panorama</h3>
+
+                </div>
+
+            </article>
+
+            <!-- 20×30 -->
+
+            <article
+                class="ppAlbumCard ppRatio2030"
+                data-folder="20x30">
+
+                <img
+                    src="assets/albums/20x30/01.jpg"
+                    alt="20×30 Album">
+
+                <div class="ppAlbumOverlay">
+
+                    <h3>20×30 Portrait</h3>
+
+                </div>
+
+            </article>
+
+            <!-- Custom -->
+
+            <article
+                class="ppAlbumCard ppRatioSquare"
+                data-folder="custom">
+
+                <img
+                    src="assets/albums/custom/01.jpg"
+                    alt="Custom Album">
+
+                <div class="ppAlbumOverlay">
+
+                    <h3>Custom Album</h3>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================================
+     ALBUM VIEWER
+========================================================== -->
+
+<div id="ppAlbumViewer" class="ppAlbumViewer">
+
+    <div class="ppAlbumViewerContent">
+
+        <div class="ppAlbumViewerHeader">
+
+            <h2 id="ppAlbumTitle"></h2>
+
+            <button id="ppAlbumClose">✕</button>
+
+        </div>
+
+        <div id="ppAlbumImages" class="ppAlbumImages"></div>
+
+    </div>
+
+</div>
+
+<section class="testimonials">
+
+    <div class="section-title">
+
+        <span>CLIENT LOVE</span>
+
+        <h2>Words That Mean Everything</h2>
+
+        <p>
+            Every smile, every emotion and every review inspires us to create unforgettable memories.
+        </p>
+
+    </div>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "Picture Palace Productions captured every emotion beautifully.
+                Our wedding album looks absolutely magical."
+            </p>
+
+            <h4>Aarav & Ananya</h4>
+
+            <span>Moradabad</span>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "Professional team, cinematic photography and outstanding service.
+                We couldn't have asked for more."
+            </p>
+
+            <h4>Vivaan & Aditi</h4>
+
+            <span>Nainital</span>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <div class="stars">★★★★★</div>
+
+            <p>
+                "Every photograph tells a story.
+                Highly recommended for weddings and pre weddings."
+            </p>
+
+            <h4>Kabir & Meera</h4>
+
+            <span>New Delhi</span>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="signature-experience">
+
+    <div class="experience-left">
+
+        <span>THE EXPERIENCE</span>
+
+        <h2>
+            Your Wedding Deserves More Than Just Beautiful Pictures
+        </h2>
+
+        <p>
+            From the first conversation to the final album delivery, we create
+            an effortless experience that allows you to enjoy every moment while
+            we preserve it forever.
+        </p>
+
+        <div class="experience-points">
+
+            <div class="point">
+                <i class="fas fa-check-circle"></i>
+                <span>Personal Wedding Consultation</span>
+            </div>
+
+            <div class="point">
+                <i class="fas fa-check-circle"></i>
+                <span>Cinematic Photography & Films</span>
+            </div>
+
+            <div class="point">
+                <i class="fas fa-check-circle"></i>
+                <span>Luxury Album Designing</span>
+            </div>
+
+            <div class="point">
+                <i class="fas fa-check-circle"></i>
+                <span>Fast Delivery & Lifetime Memories</span>
+            </div>
+
+        </div>
+
+        <a href="contact.html#booking" class="experience-btn">
+            Book Your Wedding
+        </a>
+
+    </div>
+
+    <div class="experience-right">
+
+        <img src="assets/images/about/experience.jpg" alt="Picture Palace Experience">
+
+    </div>
+
+</section>
+<!--==================================================
+            FULLSCREEN STORY VIEWER
+===================================================-->
+
+<div id="storyViewer" class="story-viewer">
+
+    <!-- Dark Background -->
+    <div class="viewer-overlay"></div>
+
+    <!-- Close Button -->
+    <button class="viewer-close">&times;</button>
+
+    <!-- Previous -->
+    <button class="viewer-prev">&#10094;</button>
+
+    <!-- Next -->
+    <button class="viewer-next">&#10095;</button>
+
+    <!-- Main Image -->
+    <div class="viewer-content">
+
+        <img id="viewerImage" src="" alt="Story Image">
+
+        <div class="viewer-counter">
+            <span id="currentImage">1</span>
+            /
+            <span id="totalImages">10</span>
+        </div>
+
+    </div>
+
+    <!-- Thumbnail Strip -->
+
+    <div class="viewer-thumbnails">
+
+        <!-- JavaScript will generate thumbnails -->
+
+    </div>
+
+</div>
+<section class="why-choose">
+
+    <div class="container">
+
+        <div class="section-heading luxury-heading">
+
+    <span>WHY PICTURE PALACE</span>
+
+    <h2>Preserving Emotions Since 1950</h2>
+
+    <p>
+        For over seven decades, Picture Palace Productions has been preserving
+        weddings, celebrations and priceless family memories through timeless
+        photography, cinematic storytelling and unmatched craftsmanship.
+    </p>
+
+</div>
+
+        <div class="choose-grid">
+
+            <div class="choose-card">
+
+                <i class="fas fa-camera-retro"></i>
+
+                <h3>75+ Years Legacy</h3>
+
+                <p>
+                    Trusted photography experience across generations.
+                </p>
+
+            </div>
+
+            <div class="choose-card">
+
+                <i class="fas fa-award"></i>
+
+                <h3>Premium Quality</h3>
+
+                <p>
+                    High-end cameras, cinematic editing and luxury albums.
+                </p>
+
+            </div>
+
+            <div class="choose-card">
+
+                <i class="fas fa-heart"></i>
+
+                <h3>Emotion First</h3>
+
+                <p>
+                    Every smile, every tear and every blessing preserved forever.
+                </p>
+
+            </div>
+
+            <div class="choose-card">
+
+                <i class="fas fa-film"></i>
+
+                <h3>Cinematic Films</h3>
+
+                <p>
+                    Wedding films that feel like beautiful movies.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--==============================
+        OUR LEGACY
+===============================-->
+
+<section class="portfolio-stats">
+
+    <div class="stats-heading">
+
+        <span>OUR JOURNEY</span>
+
+        <h2>Creating Memories Since 1950</h2>
+
+    </div>
+
+    <div class="stats-grid">
+
+        <div class="stat-box">
+            <h3>75+</h3>
+            <p>Years of Legacy</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>5000+</h3>
+            <p>Weddings Captured</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>1M+</h3>
+            <p>Memories Preserved</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>100%</h3>
+            <p>Client Satisfaction</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <!-- Logo & About -->
+        <div class="footer-about">
+
+            <img src="assets/logo/logo.png" alt="Picture Palace Productions">
+
+            <p>
+                Since 1950, Picture Palace Productions has been capturing timeless
+                memories through luxury wedding photography and cinematic films.
+            </p>
+
+            <div class="social-links">
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/picturepalaceproductions/"
+       target="_blank"
+       aria-label="Facebook">
+
+        <i class="fab fa-facebook-f"></i>
+
+    </a>
+
+    <!-- Instagram -->
+
+    <a href="https://www.instagram.com/picturepalaceproductions/?hl=en"
+       target="_blank"
+       aria-label="Instagram">
+
+        <i class="fab fa-instagram"></i>
+
+    </a>
+
+    <!-- YouTube -->
+
+    <a href="https://www.youtube.com/@picturepalaceproductions"
+       target="_blank"
+       aria-label="YouTube">
+
+        <i class="fab fa-youtube"></i>
+
+    </a>
+
+    <!-- WhatsApp -->
+
+    <a href="https://wa.me/917983139083"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="portfolio.html">Portfolio</a></li>
+
+                <li><a href="films.html">Films</a></li>
+
+                <li><a href="services.html">Services</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <!-- Services -->
+        <div>
+
+            <h3>Services</h3>
+
+            <ul>
+
+                <li>Wedding Photography</li>
+
+                <li>Pre Wedding Shoot</li>
+
+                <li>Cinematic Films</li>
+
+                <li>Drone Coverage</li>
+
+                <li>Luxury Albums</li>
+
+                <li>Live Streaming</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+        <div>
+
+    <h3>Contact</h3>
+
+    <ul class="contact-info">
+
+        <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+917983139083">+91 7983139083</a>
+        </li>
+
+        <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919219566744">+91 9219566744</a>
+        </li>
+
+        <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+918077645822">+91 8077645822</a>
+        </li>
+
+        <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919897224224">+91 9897224224</a>
+        </li>
+
+        <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:ypicturepalace@gmail.com">
+                ypicturepalace@gmail.com
+            </a>
+        </li>
+
+        <li>
+            <i class="fas fa-map-marker-alt"></i>
+            Moradabad, Uttar Pradesh, India
+        </li>
+
+    </ul>
+
+</div>
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Picture Palace Productions. All Rights Reserved.
+
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init({
+    publicKey: "R-zcl_NyW2OKOkuOk",
+});
+</script>
+<script src="js/script.js"></script>
+<script src="js/portfolio.js"></script>
+<script src="js/story-viewer.js"></script>
+</body>
+</html>
