@@ -231,3 +231,22 @@ Hero Zoom Animation
     text-transform:uppercase;
 
 }
+@media(max-width:768px){
+
+.hero-content p{
+
+    white-space:normal;
+
+    max-width:90%;
+
+}
+
+
+.hero-content{
+
+    width:100%;
+
+}
+
+
+}

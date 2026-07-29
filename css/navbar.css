@@ -233,3 +233,13 @@ MOBILE MENU
     visibility:visible;
 
 }
+/* Mobile Toggle Position */
+
+.menu-toggle{
+
+    margin-left:auto;
+
+}
+.menu-btn{
+    display:none !important;
+}

@@ -90,30 +90,73 @@ topBtn.addEventListener("click",()=>{
 //==============================
 
 const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-menu");
-const overlay = document.querySelector(".menu-overlay");
+const navMenu = document.querySelector(".nav-menu");
+const menuOverlay = document.querySelector(".menu-overlay");
 
-if (menuToggle && navLinks && overlay) {
 
-    menuToggle.addEventListener("click", () => {
+if(menuToggle && navMenu){
+
+
+    menuToggle.addEventListener("click",()=>{
+
+
         menuToggle.classList.toggle("active");
-        navLinks.classList.toggle("active");
-        overlay.classList.toggle("active");
+
+        navMenu.classList.toggle("active");
+
+
+        if(menuOverlay){
+
+            menuOverlay.classList.toggle("active");
+
+        }
+
+
     });
 
-    overlay.addEventListener("click", () => {
-        menuToggle.classList.remove("active");
-        navLinks.classList.remove("active");
-        overlay.classList.remove("active");
-    });
 
-    navLinks.querySelectorAll("a").forEach(link => {
-        link.addEventListener("click", () => {
+
+    if(menuOverlay){
+
+        menuOverlay.addEventListener("click",()=>{
+
+
             menuToggle.classList.remove("active");
-            navLinks.classList.remove("active");
-            overlay.classList.remove("active");
+
+            navMenu.classList.remove("active");
+
+            menuOverlay.classList.remove("active");
+
+
         });
+
+
+    }
+
+
+    navMenu.querySelectorAll("a").forEach(link=>{
+
+
+        link.addEventListener("click",()=>{
+
+
+            menuToggle.classList.remove("active");
+
+            navMenu.classList.remove("active");
+
+
+            if(menuOverlay){
+
+                menuOverlay.classList.remove("active");
+
+            }
+
+
+        });
+
+
     });
+
 
 }
 
