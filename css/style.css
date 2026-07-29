@@ -848,126 +848,7 @@ WHATSAPP FLOAT BUTTON
     letter-spacing:2px;
 
 }
-/* ==========================================================
-   RESPONSIVE LAYOUT
-========================================================== */
 
-/* Large Desktop */
-
-@media (min-width:1400px){
-
-    .ppAlbumGrid{
-
-        grid-template-columns:repeat(12,1fr);
-
-        gap:32px;
-
-    }
-
-}
-
-/* Laptop */
-
-@media (max-width:1200px){
-
-    .ppAlbumGrid{
-
-        grid-template-columns:repeat(8,1fr);
-
-        gap:24px;
-
-    }
-
-    .ppRatio1236,
-    .ppRatio1440{
-
-        grid-column:span 8;
-
-    }
-
-    .ppRatio1824,
-    .ppRatio2030,
-    .ppRatioSquare{
-
-        grid-column:span 4;
-
-    }
-
-}
-
-/* Tablet */
-
-@media (max-width:768px){
-
-    .ppAlbumGrid{
-
-        grid-template-columns:1fr;
-
-        gap:24px;
-
-    }
-
-    .ppRatio1236,
-    .ppRatio1824,
-    .ppRatio1440,
-    .ppRatio2030,
-    .ppRatioSquare{
-
-        grid-column:span 1;
-
-    }
-
-    .pp-album-title{
-
-        font-size:38px;
-
-    }
-
-    .ppAlbumOverlay h3{
-
-        font-size:20px;
-
-    }
-
-}
-
-/* Mobile */
-
-@media (max-width:480px){
-
-    #ppAlbumShowcase{
-
-        padding:70px 0;
-
-    }
-
-    .pp-album-title{
-
-        font-size:30px;
-
-    }
-
-    .pp-album-description{
-
-        font-size:16px;
-
-        padding:0 15px;
-
-    }
-
-    .ppAlbumOverlay{
-
-        padding:16px;
-
-    }
-
-    .ppAlbumOverlay h3{
-
-        font-size:18px;
-
-    }
-
-}
 /* ============================
    ALBUM MODAL VIEWER
 ============================ */
@@ -1511,51 +1392,6 @@ WHATSAPP FLOAT BUTTON
 
 }
 
-@media(max-width:768px){
-
-    .legacy-section{
-
-        padding:80px 0;
-
-    }
-
-    .legacy-section .section-heading h2{
-
-        font-size:38px;
-
-    }
-
-    .legacy-year{
-
-        font-size:24px;
-
-    }
-
-    .legacy-card{
-
-        padding:25px;
-
-    }
-
-    .legacy-card h3{
-
-        font-size:22px;
-
-    }
-
-    .legacy-quote{
-
-        padding:50px 20px;
-
-    }
-
-    .legacy-quote h2{
-
-        font-size:28px;
-
-    }
-
-}
 /*====================================
 
 TRIBUTE SECTION
@@ -1897,163 +1733,6 @@ text-align:justify;
 
 }
 
-/*====================================
-        RESPONSIVE
-====================================*/
-
-@media(max-width:991px){
-
-    .tribute-grid{
-
-        grid-template-columns:1fr;
-
-        gap:80px;
-
-    }
-
-    .tribute-content{
-
-        text-align:center;
-
-    }
-
-    .tribute-content p{
-
-        text-align:left;
-
-    }
-
-    .tribute-content h1{
-
-        font-size:46px;
-
-    }
-
-    .tribute-content h3{
-
-        font-size:22px;
-
-    }
-
-    .tribute-year{
-
-        position:relative;
-
-        bottom:auto;
-
-        left:auto;
-
-        transform:none;
-
-        width:100%;
-
-        margin-top:20px;
-
-    }
-
-    .legacy-poetry{
-
-        margin-top:100px;
-
-    }
-
-    .poetry-box{
-
-        padding:35px 25px;
-
-    }
-
-    .poetry-box .hindi{
-
-        font-size:24px;
-
-    }
-
-    .poetry-box .urdu{
-
-        font-size:24px;
-
-    }
-
-    .legacy-ending{
-
-        margin-top:80px;
-
-        padding-top:50px;
-
-    }
-
-    .legacy-ending h2{
-
-        font-size:32px;
-
-    }
-
-    .legacy-ending p{
-
-        font-size:18px;
-
-    }
-
-    .legacy-ending h3{
-
-        font-size:20px;
-
-        line-height:2;
-
-    }
-
-}
-
-@media(max-width:576px){
-
-    .tribute-section{
-
-        padding:80px 0;
-
-    }
-
-    .tribute-content h1{
-
-        font-size:36px;
-
-    }
-
-    .legacy-poetry h2{
-
-        font-size:28px;
-
-    }
-
-    .poetry-box{
-
-        border-radius:16px;
-
-    }
-
-    .poetry-box .hindi{
-
-        font-size:20px;
-
-        line-height:1.8;
-
-    }
-
-    .poetry-box .urdu{
-
-        font-size:20px;
-
-        line-height:2;
-
-    }
-
-    .legacy-ending h2{
-
-        font-size:26px;
-
-    }
-
-}
 /*=========================================
 NEWSROOM
 =========================================*/
@@ -2482,177 +2161,6 @@ font-style:italic;
 }
 
 
-/* Responsive */
-
-@media(max-width:1200px){
-
-.news-grid{
-
-grid-template-columns:420px 1fr;
-
-gap:60px;
-
-}
-
-.news-story{
-
-padding:50px;
-
-}
-
-.news-story h3{
-
-font-size:44px;
-
-}
-
-}
-
-@media(max-width:991px){
-
-.news-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.news-story{
-
-padding:45px;
-
-}
-
-.gold-line{
-
-display:none;
-
-}
-
-.news-story h3{
-
-font-size:36px;
-
-}
-
-.news-title h2{
-
-font-size:46px;
-
-}
-
-.news-image{
-
-max-width:650px;
-
-margin:auto;
-
-}
-
-.image-caption{
-
-padding:25px;
-
-}
-
-.story-quote{
-
-font-size:28px;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.newsroom-section{
-
-padding:90px 0;
-
-}
-
-.news-title{
-
-margin-bottom:60px;
-
-}
-
-.news-title h2{
-
-font-size:34px;
-
-}
-
-.news-story{
-
-padding:30px;
-
-}
-
-.news-story h3{
-
-font-size:28px;
-
-}
-
-.news-story p{
-
-font-size:16px;
-
-line-height:1.9;
-
-}
-
-.story-quote{
-
-font-size:22px;
-
-}
-
-.image-caption h3{
-
-font-size:22px;
-
-}
-
-}
-
-@media(max-width:576px){
-
-.news-story{
-
-padding:25px;
-
-}
-
-.news-story h3{
-
-font-size:24px;
-
-}
-
-.news-story p:first-of-type:first-letter{
-
-font-size:46px;
-
-line-height:40px;
-
-}
-
-.story-quote{
-
-font-size:20px;
-
-}
-
-.image-caption p{
-
-font-size:11px;
-
-letter-spacing:1px;
-
-}
-
-}
 
 /*=========================================
     THE LEGACY CONTINUES
@@ -2858,82 +2366,6 @@ transform:translateY(0);
 
 }
 
-/* Responsive */
-
-@media(max-width:1200px){
-
-.brothers-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
-@media(max-width:992px){
-
-.brothers-grid{
-grid-template-columns:1fr;
-max-width:520px;
-margin:auto;
-}
-
-.legacy-heading h2{
-font-size:46px;
-}
-
-.brothers-legacy-ending{
-margin-top:80px;
-}
-
-}
-
-@media(max-width:768px){
-
-.legacy-brothers{
-padding:90px 0;
-}
-
-.legacy-heading{
-margin-bottom:60px;
-}
-
-.legacy-heading h2{
-font-size:34px;
-}
-
-.legacy-heading p{
-font-size:16px;
-}
-
-.brother-content{
-padding:28px;
-}
-
-.brother-content h3{
-font-size:24px;
-}
-
-.brothers-legacy-ending h3{
-font-size:30px;
-}
-
-.brothers-legacy-ending p{
-font-size:16px;
-}
-
-}
-
-@media(max-width:480px){
-
-.brother-content{
-padding:22px;
-}
-
-.role-label{
-font-size:11px;
-letter-spacing:1px;
-}
-
-}
 /*=========================================
         BEHIND THE SCENES
 =========================================*/
@@ -5101,5 +4533,122 @@ transform:translateY(0);
     font-size:14px;
 
     line-height:1.5;
+
+}
+/*==================================
+SUCCESS TOAST
+==================================*/
+
+@media (max-width:991px){
+
+    .toast{
+
+        width:320px;
+
+        top:25px;
+
+        right:20px;
+
+        padding:16px 20px;
+
+    }
+
+    .toast i{
+
+        font-size:30px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .toast{
+
+        width:calc(100% - 30px);
+
+        max-width:420px;
+
+        top:20px;
+
+        right:15px;
+
+        left:15px;
+
+        padding:16px 18px;
+
+        gap:15px;
+
+        transform:translateY(-120px);
+
+    }
+
+    .toast.show{
+
+        transform:translateY(0);
+
+    }
+
+    .toast i{
+
+        font-size:28px;
+
+    }
+
+    .toast h4{
+
+        font-size:17px;
+
+    }
+
+    .toast p{
+
+        font-size:14px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .toast{
+
+        width:calc(100% - 20px);
+
+        left:10px;
+
+        right:10px;
+
+        top:15px;
+
+        padding:14px 15px;
+
+        gap:12px;
+
+        border-radius:6px;
+
+    }
+
+    .toast i{
+
+        font-size:24px;
+
+    }
+
+    .toast h4{
+
+        font-size:16px;
+
+        margin-bottom:4px;
+
+    }
+
+    .toast p{
+
+        font-size:13px;
+
+        line-height:1.4;
+
+    }
 
 }

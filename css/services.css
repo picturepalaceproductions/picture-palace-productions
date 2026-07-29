@@ -388,25 +388,6 @@ WHY CHOOSE US
     font-weight:500;
 
 }
-@media(max-width:991px){
-
-.why-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:600px){
-
-.why-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
 /*==================================
 PROCESS SECTION
 ==================================*/

@@ -485,17 +485,6 @@ FEATURED STORIES
     box-shadow:0 0 30px rgba(212,175,55,.6);
 }
 
-@media(max-width:992px){
-
-.films-grid{
-    grid-template-columns:1fr;
-}
-
-.film-overlay h3{
-    font-size:26px;
-}
-
-}
 /*================ VIDEO POPUP ================*/
 
 .video-popup{
@@ -980,43 +969,6 @@ INSTAGRAM
 
 }
 
-/*========================
-Responsive
-========================*/
-
-@media(max-width:992px){
-
-.gallery-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.gallery-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.gallery-card{
-
-height:320px;
-
-}
-
-#prevBtn,
-#nextBtn{
-
-width:48px;
-height:48px;
-
-}
-
-}
 /*==========================
 Gallery Title
 ==========================*/
@@ -1479,75 +1431,6 @@ FEATURED HEADING
 
 }
 
-/* Responsive */
-
-@media(max-width:1200px){
-
-.stories-layout{
-
-grid-template-columns:1fr;
-
-}
-
-.center-story{
-
-transform:none;
-
-}
-
-.center-story:hover{
-
-transform:translateY(-10px);
-
-}
-
-.story-card img{
-
-height:520px;
-
-}
-
-.center-story img{
-
-height:520px;
-
-}
-
-.story-info h2{
-
-font-size:38px;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.story-info{
-
-padding:28px;
-
-}
-
-.story-info h2{
-
-font-size:30px;
-
-}
-
-.story-info p{
-
-font-size:16px;
-
-}
-
-.story-btn{
-
-padding:13px 28px;
-
-}
-
-}
 /*=========================================
         TESTIMONIALS
 =========================================*/
@@ -1614,15 +1497,6 @@ padding:13px 28px;
 
 }
 
-@media(max-width:900px){
-
-.testimonial-grid{
-
-grid-template-columns:1fr;
-
-}
-
-}
 /*==================================================
         FULLSCREEN STORY VIEWER
 ==================================================*/
@@ -2400,31 +2274,6 @@ grid-template-columns:1fr;
 
 }
 
-@media(max-width:992px){
-
-.stats-grid{
-
-grid-template-columns:repeat(2,1fr);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.stats-grid{
-
-grid-template-columns:1fr;
-
-}
-
-.stats-heading h2{
-
-font-size:40px;
-
-}
-
-}
 /*==================================
         FILMS HERO
 ==================================*/

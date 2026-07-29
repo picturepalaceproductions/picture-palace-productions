@@ -1,0 +1,399 @@
+/*==================================================
+                FOOTER
+==================================================*/
+
+.footer{
+
+    background:#050505;
+
+    padding:90px 0 0;
+
+    border-top:1px solid rgba(212,175,55,.15);
+
+}
+
+
+/*==================================================
+                FOOTER GRID
+==================================================*/
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1.3fr;
+
+    gap:50px;
+
+}
+
+
+/*==================================================
+                FOOTER ABOUT
+==================================================*/
+
+.footer-about img{
+
+    width:180px;
+
+    margin-bottom:25px;
+
+}
+
+.footer-about p{
+
+    color:#bdbdbd;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
+
+}
+
+
+/*==================================================
+                FOOTER HEADINGS
+==================================================*/
+
+.footer h3{
+
+    color:#D4AF37;
+
+    margin-bottom:25px;
+
+    font-family:"Cinzel",serif;
+
+}
+
+
+/*==================================================
+                SOCIAL LINKS
+==================================================*/
+
+.social-links{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.social-links a{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:1px solid rgba(212,175,55,.30);
+
+    border-radius:50%;
+
+    color:#D4AF37;
+
+    transition:.3s ease;
+
+}
+
+.social-links a:hover{
+
+    background:#D4AF37;
+
+    color:#000;
+
+}
+/*==================================================
+                FOOTER LINKS
+==================================================*/
+
+.footer ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer ul li{
+
+    margin-bottom:15px;
+
+    color:#cfcfcf;
+
+}
+
+.footer ul li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.footer ul li a{
+
+    color:#cfcfcf;
+
+    text-decoration:none;
+
+    transition:color .3s ease;
+
+}
+
+.footer ul li a:hover{
+
+    color:#D4AF37;
+
+}
+
+
+/*==================================================
+                CONTACT INFO
+==================================================*/
+
+.contact-info{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.contact-info li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
+.contact-info li:last-child{
+
+    margin-bottom:0;
+
+}
+
+.contact-info li i{
+
+    width:18px;
+
+    margin-top:4px;
+
+    color:#D4AF37;
+
+    flex-shrink:0;
+
+}
+
+.contact-info li a{
+
+    color:#cfcfcf;
+
+    text-decoration:none;
+
+    transition:color .3s ease;
+
+}
+
+.contact-info li a:hover{
+
+    color:#D4AF37;
+
+}
+
+
+/*==================================================
+                FOOTER BOTTOM
+==================================================*/
+
+.footer-bottom{
+
+    margin-top:70px;
+
+    padding:25px 0;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-bottom p{
+
+    margin:0;
+
+    color:#888;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+/*==================================================
+                WHATSAPP WIDGET
+==================================================*/
+
+.whatsapp-widget{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    z-index:9999;
+
+}
+
+
+/*==================================================
+                TOGGLE BUTTON
+==================================================*/
+
+.whatsapp-toggle{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:#fff;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.whatsapp-toggle:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.45);
+
+}
+
+
+/*==================================================
+                WHATSAPP POPUP
+==================================================*/
+
+.whatsapp-box{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:80px;
+
+    width:280px;
+
+    background:#111;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    display:none;
+
+}
+
+.whatsapp-box.active{
+
+    display:block;
+
+}
+
+
+/*==================================================
+                POPUP HEADER
+==================================================*/
+
+.whatsapp-header{
+
+    padding:18px;
+
+    background:#25D366;
+
+    color:#fff;
+
+}
+
+.whatsapp-header h3{
+
+    margin:0 0 4px;
+
+    font-size:18px;
+
+}
+
+.whatsapp-header span{
+
+    font-size:13px;
+
+}
+
+
+/*==================================================
+                POPUP LINKS
+==================================================*/
+
+.whatsapp-box a{
+
+    display:block;
+
+    padding:16px 18px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+
+}
+
+.whatsapp-box a:hover{
+
+    background:#1d1d1d;
+
+    color:#D4AF37;
+
+}

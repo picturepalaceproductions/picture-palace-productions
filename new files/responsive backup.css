@@ -1,0 +1,1973 @@
+/*==================================================
+PICTURE PALACE PRODUCTIONS
+RESPONSIVE CSS
+PART 1
+Header • Navbar • Hero
+==================================================*/
+
+
+/*==================================================
+LARGE DEVICES
+==================================================*/
+
+@media (max-width:1200px){
+
+    .container{
+        width:92%;
+        margin:auto;
+    }
+
+}
+
+
+/*==================================================
+TABLETS
+==================================================*/
+
+@media (max-width:991px){
+
+    /* Header */
+
+    header{
+        height:80px;
+    }
+
+    .navbar{
+        height:80px;
+        width:92%;
+    }
+
+    .logo img{
+        width:180px;
+    }
+
+
+    /* Mobile Toggle */
+
+    .menu-toggle{
+        display:flex;
+    }
+
+
+    /* Mobile Navigation */
+
+    .nav-menu{
+
+        position:fixed;
+
+        top:0;
+        right:-100%;
+
+        width:300px;
+        height:100vh;
+
+        background:#050505;
+
+        display:flex;
+        flex-direction:column;
+
+        justify-content:center;
+        align-items:center;
+
+        gap:35px;
+
+        transition:.45s ease;
+
+        z-index:9999;
+
+        box-shadow:-15px 0 35px rgba(0,0,0,.35);
+
+    }
+
+    .nav-menu.active{
+
+        right:0;
+
+    }
+
+    .nav-menu a{
+
+        font-size:22px;
+
+    }
+
+
+    /* Hero */
+
+    .hero{
+
+        min-height:100vh;
+
+    }
+
+    .hero-content{
+
+        padding:120px 20px 70px;
+
+    }
+
+    .hero-content h4{
+
+        font-size:15px;
+
+        letter-spacing:4px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:54px;
+
+        line-height:1.15;
+
+    }
+
+    .hero-content p{
+
+        max-width:100%;
+
+        white-space:normal;
+
+        font-size:18px;
+
+        line-height:1.8;
+
+        padding:0 10px;
+
+    }
+
+    .hero-content .since{
+
+        font-size:20px;
+
+    }
+
+    .hero-buttons{
+
+        margin-top:35px;
+
+        gap:18px;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+    .logo img{
+
+        width:160px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:42px;
+
+    }
+
+    .hero-content h4{
+
+        font-size:14px;
+
+        letter-spacing:3px;
+
+    }
+
+    .hero-content p{
+
+        font-size:17px;
+
+    }
+
+    .hero-content .since{
+
+        font-size:18px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+        width:100%;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:100%;
+
+        max-width:280px;
+
+        text-align:center;
+
+    }
+
+}
+
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media (max-width:480px){
+
+    .navbar{
+
+        height:75px;
+
+    }
+
+    .logo img{
+
+        width:145px;
+
+    }
+
+    .nav-menu{
+
+        width:100%;
+
+    }
+
+    .hero-content{
+
+        padding:110px 18px 60px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:34px;
+
+    }
+
+    .hero-content h4{
+
+        font-size:13px;
+
+        letter-spacing:2px;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+    }
+
+    .hero-content .since{
+
+        font-size:17px;
+
+    }
+
+}
+/*==================================================
+PART 2
+HOME SECTIONS
+==================================================*/
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media (max-width:991px){
+
+/*=========================
+SECTION SPACING
+=========================*/
+
+.stories,
+.featured,
+.films-home,
+.services-home,
+.legacy,
+.why-us{
+
+    padding:90px 0;
+
+}
+
+
+/*=========================
+SECTION TITLE
+=========================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    line-height:1.3;
+
+}
+
+.section-title p{
+
+    width:100%;
+
+    max-width:700px;
+
+    margin:18px auto 0;
+
+}
+
+
+/*=========================
+FEATURED STORIES
+=========================*/
+
+.stories-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:25px;
+
+}
+
+.story-right{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+/*=========================
+FEATURED PORTFOLIO
+=========================*/
+
+.featured-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+/*=========================
+FILMS
+=========================*/
+
+.films-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+/*=========================
+SERVICES
+=========================*/
+
+.service-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+/*=========================
+LEGACY
+=========================*/
+
+.legacy .container{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+}
+
+.legacy-left{
+
+    text-align:center;
+
+}
+
+.legacy-right{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+/*=========================
+WHY US
+=========================*/
+
+.why-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+}
+
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+/*=========================
+SECTION
+=========================*/
+
+.stories,
+.featured,
+.films-home,
+.services-home,
+.legacy,
+.why-us{
+
+    padding:75px 0;
+
+}
+
+
+/*=========================
+TITLE
+=========================*/
+
+.section-title{
+
+    margin-bottom:45px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.section-title p{
+
+    font-size:16px;
+
+}
+
+
+/*=========================
+STORIES
+=========================*/
+
+.story-right{
+
+    grid-template-columns:1fr;
+
+}
+
+
+/*=========================
+FEATURED
+=========================*/
+
+.featured-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+/*=========================
+FILMS
+=========================*/
+
+.films-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+/*=========================
+SERVICES
+=========================*/
+
+.service-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+/*=========================
+LEGACY
+=========================*/
+
+.legacy-right{
+
+    grid-template-columns:1fr;
+
+}
+
+.counter{
+
+    padding:30px;
+
+}
+
+
+/*=========================
+WHY US
+=========================*/
+
+.why-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media (max-width:480px){
+
+.section-title h2{
+
+    font-size:28px;
+
+    line-height:1.4;
+
+}
+
+.section-title span{
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+.section-title p{
+
+    font-size:15px;
+
+}
+
+.story-overlay h3{
+
+    font-size:22px;
+
+}
+
+.featured-btn{
+
+    margin-top:35px;
+
+}
+
+.counter h2{
+
+    font-size:36px;
+
+}
+
+.counter p{
+
+    font-size:15px;
+
+}
+
+.why-card{
+
+    padding:30px 25px;
+
+}
+
+}
+/*==================================================
+PART 3
+TESTIMONIALS • INSTAGRAM • PORTFOLIO • CTA
+==================================================*/
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media (max-width:991px){
+
+/*=========================
+TESTIMONIALS
+=========================*/
+
+.testimonials{
+
+    padding:90px 0;
+
+}
+
+.testimonial-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+/*=========================
+INSTAGRAM
+=========================*/
+
+.instagram-feed{
+
+    padding:90px 0;
+
+}
+
+.instagram-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+/*=========================
+PORTFOLIO
+=========================*/
+
+.portfolio{
+
+    padding:90px 0;
+
+}
+
+.portfolio-filter{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+/*=========================
+CTA
+=========================*/
+
+.cta-section{
+
+    padding:100px 8%;
+
+}
+
+.cta-content h2{
+
+    font-size:44px;
+
+}
+
+.cta-content p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.cta-buttons{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+/*=========================
+TESTIMONIALS
+=========================*/
+
+.testimonials{
+
+    padding:75px 0;
+
+}
+
+.testimonial-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+/*=========================
+INSTAGRAM
+=========================*/
+
+.instagram-feed{
+
+    padding:75px 0;
+
+}
+
+.instagram-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+
+/*=========================
+PORTFOLIO
+=========================*/
+
+.portfolio{
+
+    padding:75px 0;
+
+}
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.filter-btn{
+
+    padding:10px 18px;
+
+    font-size:14px;
+
+}
+
+
+/*=========================
+CTA
+=========================*/
+
+.cta-section{
+
+    padding:80px 20px;
+
+}
+
+.cta-content h2{
+
+    font-size:34px;
+
+    line-height:1.3;
+
+}
+
+.cta-content p{
+
+    font-size:16px;
+
+}
+
+.cta-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.cta-buttons .btn{
+
+    width:100%;
+
+    max-width:280px;
+
+}
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media (max-width:480px){
+
+.testimonial-card{
+
+    padding:28px 22px;
+
+}
+
+.client img{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+.instagram-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.filter-btn{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.gallery-overlay h3{
+
+    font-size:20px;
+
+}
+
+.cta-content h2{
+
+    font-size:28px;
+
+}
+
+.cta-content p{
+
+    font-size:15px;
+
+}
+
+}
+/*==================================================
+PART 4
+FILMS PAGE
+==================================================*/
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media (max-width:991px){
+
+/*=========================
+FILMS HERO
+=========================*/
+
+.films-hero{
+
+    min-height:65vh;
+
+    padding:120px 20px 90px;
+
+}
+
+.films-content{
+
+    max-width:800px;
+
+}
+
+.films-content h1{
+
+    font-size:56px;
+
+}
+
+.films-content p{
+
+    font-size:18px;
+
+}
+
+
+/*=========================
+FILM CATEGORIES
+=========================*/
+
+.film-categories{
+
+    padding:90px 0;
+
+}
+
+.category-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+/*=========================
+FEATURED FILMS
+=========================*/
+
+.featured-films{
+
+    padding:90px 0;
+
+}
+
+.film-grid{
+
+    grid-template-columns:1fr;
+
+    gap:40px;
+
+}
+
+.film-details{
+
+    padding:30px;
+
+}
+
+
+/*=========================
+YOUTUBE
+=========================*/
+
+.youtube-section{
+
+    padding:90px 0;
+
+}
+
+.youtube-content{
+
+    max-width:800px;
+
+}
+
+.youtube-content h2{
+
+    font-size:42px;
+
+}
+
+
+/*=========================
+FILM STATS
+=========================*/
+
+.stats-section{
+
+    padding:90px 0;
+
+}
+
+.stats-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+
+/*=========================
+WHY CHOOSE
+=========================*/
+
+.why-choose{
+
+    padding:90px 0;
+
+}
+
+.why-choose-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+/*=========================
+FILMS HERO
+=========================*/
+
+.films-hero{
+
+    min-height:55vh;
+
+    padding:110px 20px 70px;
+
+}
+
+.films-content h1{
+
+    font-size:40px;
+
+    line-height:1.2;
+
+}
+
+.films-content p{
+
+    font-size:16px;
+
+}
+
+
+/*=========================
+CATEGORY
+=========================*/
+
+.category-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+/*=========================
+FILMS
+=========================*/
+
+.featured-films{
+
+    padding:75px 0;
+
+}
+
+.film-details{
+
+    padding:25px;
+
+}
+
+.film-details h3{
+
+    font-size:28px;
+
+}
+
+
+/*=========================
+YOUTUBE
+=========================*/
+
+.youtube-section{
+
+    padding:75px 0;
+
+}
+
+.youtube-content h2{
+
+    font-size:34px;
+
+}
+
+.youtube-content p{
+
+    font-size:16px;
+
+}
+
+
+/*=========================
+STATS
+=========================*/
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.stat-card{
+
+    padding:35px 25px;
+
+}
+
+
+/*=========================
+WHY CHOOSE
+=========================*/
+
+.why-choose{
+
+    padding:75px 0;
+
+}
+
+.why-choose-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.choose-card{
+
+    padding:35px 25px;
+
+}
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media (max-width:480px){
+
+.films-content h1{
+
+    font-size:32px;
+
+}
+
+.films-content p{
+
+    font-size:15px;
+
+}
+
+.hero-subtitle{
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+.category-item{
+
+    padding:30px 20px;
+
+}
+
+.category-item h3{
+
+    font-size:22px;
+
+}
+
+.film-details{
+
+    padding:20px;
+
+}
+
+.film-details h3{
+
+    font-size:24px;
+
+}
+
+.youtube-content h2{
+
+    font-size:28px;
+
+}
+
+.stat-card h2{
+
+    font-size:36px;
+
+}
+
+.choose-card{
+
+    padding:30px 22px;
+
+}
+
+}
+/*==================================================
+PART 5
+ABOUT PAGE
+==================================================*/
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media (max-width:991px){
+
+/*=========================
+ABOUT HERO
+=========================*/
+
+.about-hero{
+
+    height:65vh;
+
+}
+
+.about-content{
+
+    max-width:750px;
+
+}
+
+.about-content h1{
+
+    font-size:56px;
+
+}
+
+.about-content p{
+
+    font-size:18px;
+
+}
+
+
+/*=========================
+ABOUT STORY
+=========================*/
+
+.about-story{
+
+    padding:90px 0;
+
+}
+
+.story-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:50px;
+
+}
+
+.story-image{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.story-content{
+
+    text-align:center;
+
+}
+
+
+/*=========================
+TEAM
+=========================*/
+
+.team-section{
+
+    padding:90px 0;
+
+}
+
+.team-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.team-heading{
+
+    margin-bottom:60px;
+
+}
+
+.team-heading h2{
+
+    font-size:44px;
+
+}
+
+
+/*=========================
+GEM OF TEAM
+=========================*/
+
+.gem-member{
+
+    margin-top:80px;
+
+}
+
+
+/*=========================
+BEHIND THE SCENES
+=========================*/
+
+.bts-section{
+
+    padding:90px 0;
+
+}
+
+.bts-heading{
+
+    margin-bottom:60px;
+
+}
+
+.bts-gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+    grid-auto-rows:220px;
+
+}
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+/*=========================
+ABOUT HERO
+=========================*/
+
+.about-hero{
+
+    height:55vh;
+
+}
+
+.about-content h1{
+
+    font-size:40px;
+
+}
+
+.about-content p{
+
+    font-size:16px;
+
+}
+
+
+/*=========================
+ABOUT STORY
+=========================*/
+
+.about-story{
+
+    padding:75px 0;
+
+}
+
+.story-content h2{
+
+    font-size:36px;
+
+}
+
+.story-content p{
+
+    font-size:16px;
+
+}
+
+
+/*=========================
+TEAM
+=========================*/
+
+.team-section{
+
+    padding:75px 0;
+
+}
+
+.team-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.team-heading h2{
+
+    font-size:36px;
+
+}
+
+
+/*=========================
+GEM
+=========================*/
+
+.gem-image{
+
+    width:200px;
+
+    height:200px;
+
+}
+
+.gem-member h3{
+
+    font-size:30px;
+
+}
+
+
+/*=========================
+BTS
+=========================*/
+
+.bts-section{
+
+    padding:75px 0;
+
+}
+
+.bts-gallery{
+
+    grid-template-columns:1fr;
+
+    grid-auto-rows:260px;
+
+}
+
+.bts-item.tall,
+.bts-item.wide{
+
+    grid-column:auto;
+
+    grid-row:auto;
+
+}
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media (max-width:480px){
+
+.about-content h1{
+
+    font-size:32px;
+
+}
+
+.about-content span{
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+.about-content p{
+
+    font-size:15px;
+
+}
+
+.story-content h2{
+
+    font-size:30px;
+
+}
+
+.team-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.team-heading h2{
+
+    font-size:30px;
+
+}
+
+.team-card h4{
+
+    font-size:22px;
+
+}
+
+.gem-image{
+
+    width:170px;
+
+    height:170px;
+
+}
+
+.gem-member h3{
+
+    font-size:26px;
+
+}
+
+.gem-member p{
+
+    font-size:15px;
+
+}
+
+.bts-heading h2{
+
+    font-size:30px;
+
+}
+
+.bts-heading p{
+
+    font-size:15px;
+
+}
+
+.bts-gallery{
+
+    gap:15px;
+
+}
+
+}
+/*==================================================
+PART 6
+CONTACT PAGE • FAQ • BOOKING CTA • UTILITIES
+==================================================*/
+
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media (max-width:991px){
+
+/*=========================
+CONTACT HERO
+=========================*/
+
+.contact-hero{
+
+    padding:140px 0 90px;
+
+}
+
+.contact-hero-content{
+
+    max-width:750px;
+
+}
+
+.contact-hero-content h1{
+
+    font-size:56px;
+
+}
+
+.contact-hero-content p{
+
+    font-size:18px;
+
+}
+
+
+/*=========================
+CONTACT SECTION
+=========================*/
+
+.contact-section{
+
+    padding:90px 0;
+
+}
+
+.contact-wrapper{
+
+    grid-template-columns:1fr;
+
+    gap:60px;
+
+}
+
+.contact-info{
+
+    text-align:center;
+
+}
+
+.contact-card{
+
+    justify-content:center;
+
+}
+
+.contact-form{
+
+    padding:35px;
+
+}
+
+
+/*=========================
+GOOGLE MAP
+=========================*/
+
+.contact-map{
+
+    padding-bottom:90px;
+
+}
+
+.contact-map iframe{
+
+    height:450px;
+
+}
+
+
+/*=========================
+FAQ
+=========================*/
+
+.faq-section{
+
+    padding:90px 0;
+
+}
+
+.faq-wrapper{
+
+    max-width:100%;
+
+}
+
+
+/*=========================
+BOOKING CTA
+=========================*/
+
+.booking-cta{
+
+    padding:100px 30px;
+
+}
+
+.booking-cta h2{
+
+    font-size:46px;
+
+}
+
+.booking-cta p{
+
+    max-width:700px;
+
+}
+
+}
+
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width:768px){
+
+/*=========================
+CONTACT HERO
+=========================*/
+
+.contact-hero{
+
+    padding:120px 20px 70px;
+
+}
+
+.contact-hero-content h1{
+
+    font-size:40px;
+
+}
+
+.contact-hero-content p{
+
+    font-size:16px;
+
+}
+
+
+/*=========================
+CONTACT
+=========================*/
+
+.contact-section{
+
+    padding:75px 0;
+
+}
+
+.contact-info h2{
+
+    font-size:34px;
+
+}
+
+.contact-card{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.contact-form{
+
+    padding:25px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:16px 18px;
+
+}
+
+
+/*=========================
+MAP
+=========================*/
+
+.contact-map{
+
+    padding-bottom:75px;
+
+}
+
+.contact-map iframe{
+
+    height:350px;
+
+}
+
+
+/*=========================
+FAQ
+=========================*/
+
+.faq-section{
+
+    padding:75px 0;
+
+}
+
+.faq-question{
+
+    font-size:18px;
+
+    padding:20px;
+
+}
+
+.faq-answer{
+
+    padding:0 20px 20px;
+
+    font-size:15px;
+
+}
+
+
+/*=========================
+BOOKING CTA
+=========================*/
+
+.booking-cta{
+
+    padding:80px 20px;
+
+}
+
+.booking-cta h2{
+
+    font-size:34px;
+
+    line-height:1.3;
+
+}
+
+.booking-cta p{
+
+    font-size:16px;
+
+}
+
+}
+
+
+/*==================================================
+SMALL MOBILE
+==================================================*/
+
+@media (max-width:480px){
+
+.contact-hero-content h1{
+
+    font-size:32px;
+
+}
+
+.contact-hero-content span{
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+.contact-hero-content p{
+
+    font-size:15px;
+
+}
+
+.contact-info h2{
+
+    font-size:28px;
+
+}
+
+.contact-card i{
+
+    width:55px;
+
+    height:55px;
+
+    font-size:20px;
+
+}
+
+.contact-card h4{
+
+    font-size:20px;
+
+}
+
+.contact-form{
+
+    padding:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    font-size:15px;
+
+}
+
+.contact-map iframe{
+
+    height:280px;
+
+}
+
+.faq-question{
+
+    font-size:16px;
+
+}
+
+.booking-cta h2{
+
+    font-size:28px;
+
+}
+
+.booking-cta p{
+
+    font-size:15px;
+
+}
+
+}
