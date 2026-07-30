@@ -418,3 +418,68 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+/*==================================
+SERVICE POPUP
+==================================*/
+
+
+function openService(service){
+
+    let title = document.getElementById("serviceTitle");
+
+    let description = document.getElementById("serviceDescription");
+
+
+    let details = {
+
+        "Wedding Photography":
+        "We capture every emotion, ritual and precious moment of your wedding day with a perfect blend of candid photography, traditional coverage and cinematic storytelling.",
+
+
+        "Cinematic Wedding Films":
+        "Our cinematic wedding films transform your beautiful moments into an emotional visual story with creative direction, premium editing and cinematic shots.",
+
+
+        "Pre Wedding":
+        "Beautiful pre wedding sessions designed to showcase your love story with creative concepts, stunning locations and cinematic visuals.",
+
+
+        "Destination Wedding":
+        "Complete destination wedding coverage across India and beyond with luxury photography, cinematic films and unforgettable storytelling.",
+
+
+        "Maternity & Baby Shoot":
+        "Elegant maternity portraits and adorable baby photography capturing the beautiful beginning of your family journey.",
+
+
+        "Birthday & Aqeeqa":
+        "We preserve your family celebrations, birthdays and aqeeqa ceremonies with timeless photographs and cinematic films.",
+
+
+        "Commercial Films":
+        "Professional brand films, advertisements and commercial productions created with cinematic visuals and creative storytelling.",
+
+
+        "Podcasts & Documentaries":
+        "High quality podcast production and documentary filmmaking with professional camera work, storytelling and cinematic presentation."
+
+    };
+
+
+    title.innerHTML = service;
+
+    description.innerHTML = details[service];
+
+
+    document.getElementById("serviceModal").style.display="flex";
+
+
+}
+
+
+
+function closeService(){
+
+    document.getElementById("serviceModal").style.display="none";
+
+}
